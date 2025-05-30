@@ -1,0 +1,71 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+.container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+.DelightBurg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation-delay: 0.2s;
+}
+.CheeseBurg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation-delay: 0.4s;
+}
+.BBQBurg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation-delay: 0.6s;
+}
+
+.description{
+    color: white;
+}
+.titre1{
+    color: white;
+    text-align: center;
+    margin-top: 170px;
+}
+.titre{
+    color: white;
+}
+
+.image{
+    height: 275px;
+    width: 275px;
+}
+
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .DelightBurg:hover, .CheeseBurg:hover, .BBQBurg:hover {
+    opacity: 0; 
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  

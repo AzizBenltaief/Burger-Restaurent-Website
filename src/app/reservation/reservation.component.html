@@ -1,0 +1,16 @@
+<div class="container">
+    <h1 class="reserve" id="reservations">Reservation</h1>
+    <input type="text" class="info" placeholder="FirstName and LastName" [(ngModel)]="fullName">
+    <br>
+    <input type="text" class="info" placeholder="Adresse" [(ngModel)]="address">
+    <br>
+    <input type="tel" class="info" placeholder="Phone Number" [(ngModel)]="phone">
+    <br>
+    <input type="date" class="info" placeholder="dd/mm/yyyy" [(ngModel)]="date">
+    <br>
+    <input type="time" class="info" placeholder="hh:mm" [(ngModel)]="time">
+    <br>
+    <textarea class="info" placeholder="Additional Comment" [(ngModel)]="comment"></textarea>
+    <br>
+    <button class="btn" (click)="onSubmit()">Submit</button>
+</div>
